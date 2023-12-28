@@ -1,10 +1,15 @@
 #include "main.h"
-
-unsigned int print_length(Node *head)
+/**
+ * print_length - prints the amount of nodes in
+ * a linked list using the array index method
+ * @node: first node to be checked (most cases its the head)
+ * Return: number of nodes
+*/
+unsigned int print_len(Node *node)
 {
 	unsigned int length = 0;
 
-	Node *current = head;
+	Node *current = node;
 	while (current != NULL)
 	{
 		current = current->next;
@@ -13,7 +18,14 @@ unsigned int print_length(Node *head)
 	return (length);
 }
 
-unsigned int recursion_length(Node *node)
+/**
+ * recursion_length - prints the amount of nodes
+ * in a linked list using recursion
+ * @node: the first node to be checked
+ * Return: number of nodes
+*/
+
+unsigned int print_recursion_len(Node *node)
 {
 	if (node == NULL)
 	{
