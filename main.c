@@ -18,6 +18,7 @@ int main(void)
 	head_list = insert_at_tail(head_list, 50);
 	head_list = insert_at_tail(head_list, 50);
 	head_list = insert_at_tail(head_list, 50);
+	head_list = insert_at_tail(head_list, 20);
 	printf("Before Replacement : \n\n");
 	print_list(head_list);
 	replace_matches(head_list,50, 2);
